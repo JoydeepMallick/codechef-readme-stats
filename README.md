@@ -13,3 +13,7 @@ As off now :-
 
 2. `image_gen.py` : Uses Svg_write to generate an image
 
+### How it will look on your system 
+Assume user is **joy2022**
+
+![](./template/desired_style/my_chef_hat.png)
