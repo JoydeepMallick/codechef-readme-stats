@@ -11,8 +11,8 @@ def get_codechef_stats(username):
     soup = BeautifulSoup(response.text, 'html.parser')
 
     # (Testing purpose only) Print the entire HTML in a seperate text file
-    with open("./output_soup.html", "w") as file:
-        file.write(str(soup.prettify()))
+    # with open("./output_soup.html", "w") as file:
+    #     file.write(str(soup.prettify()))
 
     try:
         # Find name of current user
@@ -86,9 +86,9 @@ def get_codechef_stats(username):
         "problems_solved" : problems_solved,
     }
 
-# Testing purpose
-if __name__ == "__main__":
-    # test users
-    users = ['joy2022', 'joy202323223','jwpassion1', 'kdu_1','maroonrk']
-    username = users[2]
-    print(get_codechef_stats(username))
+# # Testing purpose
+# if __name__ == "__main__":
+#     # test users
+#     users = ['joy2022', 'joy202323223','jwpassion1', 'kdu_1','maroonrk']
+#     username = users[2]
+#     print(get_codechef_stats(username))
