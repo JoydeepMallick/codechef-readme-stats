@@ -37,8 +37,12 @@ Main files :-
 Assume user is **joy2022**
 
 ```
-![](your_codechef_username)
+![](https://codechef-readme-stats.onrender.com/your_codechef_username)
 ```
-![](http://127.0.0.1:5000/joy2022)
+![](https://codechef-readme-stats.onrender.com/joy2022)
 
-⚠️THE ABOVE HAVE BEEN TESTED IN Python 3.12.4 in Conda Environment and all dependencies listed in requirements.txt have been installed via pip.
+If username not exists
+
+![](https://codechef-readme-stats.onrender.com/jfsdkfdsdkfsfh)
+
+⚠️THE ABOVE HAVE BEEN TESTED IN Python 3.12.4 and 3.11.3 in Conda Environment and all dependencies listed in requirements.txt have been installed via pip.
