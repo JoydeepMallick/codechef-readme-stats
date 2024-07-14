@@ -25,7 +25,7 @@ codechef_readme_stats/
 
 ```
 
-As off now :-
+Main files :-
 
 1. `codechef_data_extractor.py` : uses BeautifulSoup to extract data from CodeChef profile static HTML page
 
@@ -40,3 +40,5 @@ Assume user is **joy2022**
 ![](your_codechef_username)
 ```
 ![](http://127.0.0.1:5000/joy2022)
+
+⚠️THE ABOVE HAVE BEEN TESTED IN Python 3.12.4 in Conda Environment and all dependencies listed in requirements.txt have been installed via pip.
