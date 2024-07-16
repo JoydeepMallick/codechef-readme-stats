@@ -34,22 +34,34 @@ Main files :-
 3. `app.py` : runs a server to view the image
 
 ### How it will look on your system 
-Assume user is **joy2022**
 
-```
+
+```markdown
 ![](https://codechef-readme-stats.onrender.com/your_codechef_username)
 ```
+
+Assume user is **joy2022** so I will type the following :-
+```
+![](https://codechef-readme-stats.onrender.com/joy2022)
+```
+and output will be :-
 ![](https://codechef-readme-stats.onrender.com/joy2022)
 
-If username not exists
+
+If username does not exists then it will look something like this as shown below:-
 
 ![](https://codechef-readme-stats.onrender.com/jfsdkfdsdkfsfh)
 
-Want to make your badge redirect people to your profile? Try this:
+
+### Want to make your badge redirect people to your profile? 
+
+Try this:
 ```
 [![](https://codechef-readme-stats.onrender.com/your_codechef_username)](https://www.codechef.com/users/your_codechef_username)
 ```
 
 
 ![](http://localhost:5000/joy2022)
+
+
 ⚠️THE ABOVE HAVE BEEN TESTED IN Python 3.12.4 and 3.11.3 in Conda Environment and all dependencies listed in requirements.txt have been installed via pip.
