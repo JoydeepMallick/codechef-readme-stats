@@ -18,8 +18,7 @@ def codechef_stats(username):
     else:
         error_image = os.path.join(app.config['STATIC_FOLDER'], 'Chef_not_found.png')
         svg = ig.generate_error_svg(username, hat_image, error_image)
-        print(svg)
-    
+
     return Response(svg.as_svg(), mimetype='image/svg+xml')
 
 if __name__ == '__main__':

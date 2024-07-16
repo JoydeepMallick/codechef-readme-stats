@@ -1,31 +1,19 @@
-import base64
-from io import BytesIO
-from PIL import Image
 import drawsvg as draw
 # import codechef_data_extractor as cde
 
-def image_to_data_uri(image_path):
-    image = Image.open(image_path)
-    buffer = BytesIO()
-    image.save(buffer, format='PNG')
-    return 'data:image/png;base64,' + base64.b64encode(buffer.getvalue()).decode('utf-8')
-
-
 def generate_svg_with_hat(data, hat_image_path, codechef_logo_path):
-    hat_image_uri = image_to_data_uri(hat_image_path)
-    codechef_logo_uri = image_to_data_uri(codechef_logo_path)
 
     # Create a drawing object
     d = draw.Drawing(400, 500, origin='center', displayInline=False)
     
     # Add the chef hat image as background
-    d.append(draw.Image(-200, -250, 400, 500, hat_image_uri))
+    d.append(draw.Image(-200, -250, 400, 500, hat_image_path))
 
     # Coordinates for text
     y_start = -100
     y_step = 25
     ############################ CodeChef Icon #############################
-    d.append(draw.Image(x=-40, y=-190, width=80, height=80, path=codechef_logo_uri))
+    d.append(draw.Image(x=-40, y=-190, width=80, height=80, path=codechef_logo_path))
 
     ############################ Upper Section #############################
     # Actual Name
@@ -97,7 +85,6 @@ def generate_error_svg(username, image_path, error_image_path):
     d.append(draw.Text(text="Sorry😒\n can't cook right now", font_size=16, x=0, y=90, center=True, fill='red'))
     
     return d
-
 
 
 # # (Testing purpose only)Extracting data for a specific user
