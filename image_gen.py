@@ -75,18 +75,21 @@ def color_picker(star_count, current_rating):
     for upper_bound, stars, color in rating_to_stars:
         if int(current_rating) <= upper_bound and int(star_count) == stars:
             return color
-    return '#A60116'  # Default case (for legends only LMAO)
+    return '#A60116'  # Default case (for legends only 😿)
 
 
-def generate_error_svg(username, image_path, error_image_path):
+def generate_error_svg(username, hat_image_path, error_image_path):
+    hat_image_base64 = image_to_base64(hat_image_path)
+    error_image_base64 = image_to_base64(error_image_path)
+
     # Create a drawing object
     d = draw.Drawing(width=400, height=500, origin='center', displayInline=False)
     
     # Add the chef hat image as background
-    d.append(draw.Image(x=-200, y=-250, width=400, height=500, path=image_path))
+    d.append(draw.Image(x=-200, y=-250, width=400, height=500, path=f'data:image/png;base64,{hat_image_base64}'))
 
     # Place error image over hat
-    d.append(draw.Image(x=-150, y=-200, width=300, height=300, path=error_image_path))
+    d.append(draw.Image(x=-150, y=-200, width=300, height=300, path=f'data:image/png;base64,{error_image_base64}'))
 
     # Add the error message
     d.append(draw.Text(text=f'Chef was not found.', font_size=20, x=0, y=150, center=True, fill='red'))
