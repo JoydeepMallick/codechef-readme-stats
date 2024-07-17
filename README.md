@@ -49,7 +49,7 @@ Main files :-
 
 Assume user is **joy2022** so I will type the following :-
 
-```
+```markdown
 ![](https://codechef-readme-stats.onrender.com/joy2022?v=1)
 ```
 
@@ -59,6 +59,9 @@ and output will be :-
 ![](https://codechef-readme-stats.onrender.com/joy2022?v=1)
 
 Assume if user is **maroonrk** then output will be
+```markdown
+![](https://codechef-readme-stats.onrender.com/maroonrk?v=1)
+```
 
 ![](https://codechef-readme-stats.onrender.com/maroonrk?v=1)
 
@@ -75,8 +78,7 @@ then it will look something like this as shown below:-
 Try this:
 
 ```markdown
-[![](https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1)](https://www.codechef.com/users/
-{your_codechef_username})
+[![](https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1)](https://www.codechef.com/users/{your_codechef_username})
 ```
 
 
