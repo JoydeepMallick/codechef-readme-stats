@@ -38,7 +38,7 @@ Main files :-
 ### If valid user exists
 
 ```markdown
-![](https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1)
+![CodeChef Stats](https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1)
 ```
 
 ### <span style="color:red">NOTE</span>
@@ -50,27 +50,27 @@ Main files :-
 Assume user is **joy2022** so I will type the following :-
 
 ```markdown
-![](https://codechef-readme-stats.onrender.com/joy2022?v=1)
+![CodeChef Stats](https://codechef-readme-stats.onrender.com/joy2022?v=1)
 ```
 
 
 and output will be :-
 
-![](https://codechef-readme-stats.onrender.com/joy2022?v=1)
+![CodeChef Stats](https://codechef-readme-stats.onrender.com/joy2022?v=1)
 
 Assume if user is **maroonrk** then output will be
 ```markdown
-![](https://codechef-readme-stats.onrender.com/maroonrk?v=1)
+![CodeChef Stats](https://codechef-readme-stats.onrender.com/maroonrk?v=1)
 ```
 
-![](https://codechef-readme-stats.onrender.com/maroonrk?v=1)
+![CodeChef Stats](https://codechef-readme-stats.onrender.com/maroonrk?v=1)
 
 
 
 ### If username does not exists
 then it will look something like this as shown below:-
 
-![](https://codechef-readme-stats.onrender.com/jfsdkfdsdkfsfh?v=1)
+![CodeChef Stats](https://codechef-readme-stats.onrender.com/jfsdkfdsdkfsfh?v=1)
 
 
 ## Want to make your badge redirect people to your profile? 
@@ -78,7 +78,7 @@ then it will look something like this as shown below:-
 Try this:
 
 ```markdown
-[![](https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1)](https://www.codechef.com/users/{your_codechef_username})
+[![CodeChef Stats](https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1)](https://www.codechef.com/users/{your_codechef_username})
 ```
 
 
