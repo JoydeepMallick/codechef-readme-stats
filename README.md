@@ -29,9 +29,9 @@ Main files :-
 
 1. `codechef_data_extractor.py` : uses BeautifulSoup to extract data from CodeChef profile static HTML page
 
-2. `image_gen.py` : Uses Svg_write to generate an image
+2. `image_gen.py` : Uses drawsvg to generate an svg image and make it self containing and not referencing any other image using base64.
 
-3. `app.py` : runs a server to view the image
+3. `app.py` : runs a server to generate svg image from imported modules and then convert it to png before serving the user.
 
 ## How it will look on your system 
 

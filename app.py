@@ -3,7 +3,6 @@ import codechef_data_extractor as cde
 import image_gen as ig
 import os
 import io
-from PIL import Image
 import cairosvg
 
 app = Flask(__name__)
