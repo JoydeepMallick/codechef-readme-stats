@@ -49,7 +49,7 @@ Assume user is **joy2022** so I will type the following :-
 
 and output will be :-
 
-![](https://codechef-readme-stats.onrender.com/joy2022)
+![](https://codechef-readme-stats.onrender.com/joy2022?v=1)
 
 
 ### If username does not exists
