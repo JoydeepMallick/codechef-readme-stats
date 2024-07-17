@@ -35,35 +35,48 @@ Main files :-
 
 ## How it will look on your system 
 
-## If valid user exists
+### If valid user exists
 
 ```markdown
-![](https://codechef-readme-stats.onrender.com/your_codechef_username)
+![](https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1)
 ```
+
+### <span style="color:red">NOTE</span>
+
+**Please do not forget to type the section** `....?v=1` since its essential **force cache refresh in github** to display images else sometimes images are not loaded as intended😐 Learnt it the hard way debugging!!!
+
+
 
 Assume user is **joy2022** so I will type the following :-
 
 ```
-![](https://codechef-readme-stats.onrender.com/joy2022)
+![](https://codechef-readme-stats.onrender.com/joy2022?v=1)
 ```
+
 
 and output will be :-
 
 ![](https://codechef-readme-stats.onrender.com/joy2022?v=1)
 
+Assume if user is **maroonrk** then output will be
+
+![](https://codechef-readme-stats.onrender.com/maroonrk?v=1)
+
+
 
 ### If username does not exists
 then it will look something like this as shown below:-
 
-![](https://codechef-readme-stats.onrender.com/jfsdkfdsdkfsfh)
+![](https://codechef-readme-stats.onrender.com/jfsdkfdsdkfsfh?v=1)
 
 
 ## Want to make your badge redirect people to your profile? 
 
 Try this:
 
-```
-[![](https://codechef-readme-stats.onrender.com/your_codechef_username)](https://www.codechef.com/users/your_codechef_username)
+```markdown
+[![](https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1)](https://www.codechef.com/users/
+{your_codechef_username})
 ```
 
 
