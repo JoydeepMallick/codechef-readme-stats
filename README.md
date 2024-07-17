@@ -80,7 +80,5 @@ Try this:
 ```
 
 
-![](http://localhost:5000/joy2022)
-
 
 ⚠️THE ABOVE HAVE BEEN TESTED IN Python 3.12.4 and 3.11.3 in Conda Environment and all dependencies listed in requirements.txt have been installed via pip.
