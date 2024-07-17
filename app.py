@@ -1,7 +1,10 @@
-from flask import Flask, Response
+from flask import Flask, Response, send_file
 import codechef_data_extractor as cde
 import image_gen as ig
 import os
+import io
+from PIL import Image
+import cairosvg
 
 app = Flask(__name__)
 
@@ -19,7 +22,16 @@ def codechef_stats(username):
         error_image = os.path.join(app.config['STATIC_FOLDER'], 'Chef_not_found.png')
         svg = ig.generate_error_svg(username, hat_image, error_image)
 
-    return Response(svg.as_svg(), mimetype='image/svg+xml')
+     # convert drawing object to a svg file
+    svg = svg.as_svg()
+    print(svg)
+
+    # Convert SVG data to PNG format using cairosvg
+    png_data = cairosvg.svg2png(bytestring=svg)
+    png_io = io.BytesIO(png_data)
+    
+    return send_file(png_io, mimetype='image/png')
+    # return Response(svg, mimetype='image/svg+xml')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

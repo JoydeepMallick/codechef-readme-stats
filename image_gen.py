@@ -1,19 +1,27 @@
 import drawsvg as draw
-# import codechef_data_extractor as cde
+import base64
+
+def image_to_base64(image_path): # ensuring all images are self contained in svg and not referenced
+    with open(image_path, 'rb') as image_file:
+        encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+    return encoded_string
+
 
 def generate_svg_with_hat(data, hat_image_path, codechef_logo_path):
+    hat_image_base64 = image_to_base64(hat_image_path)
+    codechef_logo_base64 = image_to_base64(codechef_logo_path)
 
     # Create a drawing object
-    d = draw.Drawing(400, 500, origin='center', displayInline=False)
+    d = draw.Drawing(width=400, height=500, origin='center', displayInline=False)
     
     # Add the chef hat image as background
-    d.append(draw.Image(-200, -250, 400, 500, hat_image_path))
+    d.append(draw.Image(x=-200, y=-250, width=400, height=500, path=f'data:image/png;base64,{hat_image_base64}'))
 
     # Coordinates for text
     y_start = -100
     y_step = 25
     ############################ CodeChef Icon #############################
-    d.append(draw.Image(x=-40, y=-190, width=80, height=80, path=codechef_logo_path))
+    d.append(draw.Image(x=-40, y=-190, width=80, height=80, path=f'data:image/png;base64,{codechef_logo_base64}'))
 
     ############################ Upper Section #############################
     # Actual Name
@@ -85,16 +93,3 @@ def generate_error_svg(username, image_path, error_image_path):
     d.append(draw.Text(text="Sorry😒\n can't cook right now", font_size=16, x=0, y=90, center=True, fill='red'))
     
     return d
-
-
-# # (Testing purpose only)Extracting data for a specific user
-# stats = cde.get_codechef_stats("joy2022")
-
-# if "error" not in stats:
-#     svg = generate_svg_with_hat(stats, './static/One_chef\'s_hat.png', './static/codechef_logo.png')
-#     svg.save_svg('./codechef_stats_with_hat.svg')
-#     print("SVG file created successfully.")
-# else:
-#     print("Error generating SVG, use the image generated instead")
-#     svg = generate_error_svg(stats, './static/One_chef\'s_hat.png', './static/Chef_not_found.png')
-#     svg.save_svg('./codechef_stats_chef_not_found.svg')
