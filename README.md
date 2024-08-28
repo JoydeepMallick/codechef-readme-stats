@@ -49,8 +49,15 @@ Main files :-
 
 Assume user is **joy2022** so I will type the following :-
 
+For Markdown 
 ```markdown
 ![CodeChef Stats](https://codechef-readme-stats.onrender.com/joy2022?v=1)
+```
+
+and for HTML it will be
+
+```html
+<img src="https://codechef-readme-stats.onrender.com/joy2022?v=1" alt="something you like to put in here"/>
 ```
 
 
@@ -77,10 +84,17 @@ then it will look something like this as shown below:-
 
 Try this:
 
+Markdown Format
+
 ```markdown
 [![CodeChef Stats](https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1)](https://www.codechef.com/users/{your_codechef_username})
 ```
-
+or the HTML format
+```html
+<a href="https://www.codechef.com/users/{your_codechef_username}">
+    <img src="https://codechef-readme-stats.onrender.com/{your_codechef_username}?v=1">
+</a>
+```
 
 
 ⚠️THE ABOVE HAVE BEEN TESTED IN Python 3.12.4 and 3.11.3 in Conda Environment and all dependencies listed in requirements.txt have been installed via pip.
